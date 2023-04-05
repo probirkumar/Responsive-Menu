@@ -14,11 +14,15 @@
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="#!">Logo</a>
+                <a href="index.html">Logo</a>
             </div>
             <nav>
-                <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
+                <div class="nav-mobile">
+                    <a onclick="myFunction()" id="navbar-toggle" href="#!">
+                        <span></span>
+                    </a>
+                </div>
+                <ul id="navbar-show-hide" class="nav-list">
                     <li>
                         <a href="#!">Home</a>
                     </li>
@@ -64,6 +68,23 @@
         </div>
     </section>
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <script>
+        // const mobileNavbar = document.getElementById("navbar-toggle");
+        // console.log(mobileNavbar);
+
+        // mobileNavbar.style.color = "red"
+
+        function myFunction() {
+            var x = document.getElementById("navbar-show-hide");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
